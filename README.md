@@ -1,4 +1,4 @@
-# Sava
+# Slack Bot
 
 
 ## API
