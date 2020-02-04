@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Slack Bot
+ * Slack Bot, http://tpkn.me/
  */
 class SlackBot {
    public $channel;
