@@ -12,10 +12,8 @@ new SlackBot($channel, $access_token[, $service_url]);
 ## Usage
 
 ```php
-include 'slack-bot.php';
-
-$bot = new SlackBot('XXXXXXXXX', 'xoxb-AAAAAAAAAAAA-BBBBBBBBBBBB-CCCCCCCCCCCCCCCCCCCCCCCC');
-$response = $bot->says('chiki-briki!');
+$bot = new \tpkn\SlackBot('XXXXXXXXX', 'xoxb-AAAAAAAAAAAA-BBBBBBBBBBBB-CCCCCCCCCCCCCCCCCCCCCCCC');
+$response = $bot->say('chiki-briki!');
 ```
 
 

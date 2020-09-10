@@ -1,5 +1,7 @@
 <?php
 
+namespace tpkn;
+
 /**
  * Slack Bot, http://tpkn.me/
  */
@@ -17,7 +19,7 @@ class SlackBot {
       }
    }
 
-   public function says($text) {
+   public function say($text) {
       $body = array(
          'text' => $text,
          'channel' => $this->channel
@@ -33,7 +35,7 @@ class SlackBot {
          CURLOPT_POST => true,
          CURLOPT_RETURNTRANSFER => true,
          CURLOPT_HTTPHEADER => $headers,
-         CURLOPT_POSTFIELDS => json_encode($body),
+         CURLOPT_POSTFIELDS => json_encode($body, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES),
       ));
 
       $response = curl_exec($curl);
