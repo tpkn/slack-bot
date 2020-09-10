@@ -1,14 +1,6 @@
 # Slack Bot
 
 
-## API
-
-```php
-new SlackBot($channel, $access_token[, $service_url]);
-```
-
-
-
 ## Usage
 
 ```php
