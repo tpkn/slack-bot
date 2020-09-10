@@ -4,7 +4,7 @@
 ## Usage
 
 ```php
-$bot = new \tpkn\SlackBot('XXXXXXXXX', 'xoxb-AAAAAAAAAAAA-BBBBBBBBBBBB-CCCCCCCCCCCCCCCCCCCCCCCC');
+$bot = new \tpkn\SlackBot($channel, $access_token[, $service_url]);
 $response = $bot->say('chiki-briki!');
 ```
 
